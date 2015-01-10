@@ -1,11 +1,11 @@
 language: python
 python:
-  - 2.6
+  #- 2.6
   - 2.7
-  - 3.2
-  - 3.3
-  - 3.4
-  - pypy
+  #- 3.2
+  #- 3.3
+  #- 3.4
+  #- pypy
 install:
   - pip install -r requirements_dev.txt
   - pip install coverage flake8 nose pep8-naming
@@ -14,5 +14,3 @@ script:
   - nosetests --with-coverage --cover-branches --cover-package honcho honcho/test/unit
   - nosetests honcho/test/integration
   - flake8 honcho
-after_success:
-  - coveralls

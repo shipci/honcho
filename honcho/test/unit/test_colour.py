@@ -5,7 +5,7 @@ from honcho import colour, compat
 
 class TestColour(TestCase):
     def test_colours(self):
-        self.assertEqual(colour.red, '31')
+        self.assertEqual(colour.red, '34')
         self.assertEqual(colour.intense_red, '31;1')
         self.assertEqual(colour.cyan, '36')
         self.assertEqual(colour.intense_cyan, '36;1')
